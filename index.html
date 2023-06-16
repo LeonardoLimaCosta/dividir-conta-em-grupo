@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dividir conta</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="container">
+  <div>
+    <h1 class="title">Divida a conta entre o grupo</h1>
+  </div>
+  <div>
+    <form class="tipsForm" id="tipsForm">
+<label for="Conta">
+  <p>Quanto ficou a conta?</p>
+</label>
+<p>R$ <input type="number" placeholder="100" name="Conta" id="Conta" class="formImput" required>
+</p> 
+<label for="Pessoas">
+  <p>Quantas pessoas vão dividir a conta?</p>
+</label>
+<p>
+  <input type="number" placeholder="1" name="Pessoas" id="Pessoas" class="formImput" required>
+</p>
+<button type="submit" class="formSubmit">Calcular</button>
+
+    </form>
+  </div>
+  <div id="totalTip">
+    O valor total para cada pessoa ficaria:
+    <br>
+    R$<span id="tip">0.00</span>
+    <span id="each">Para cada pessoa</span>
+    
+  </div>
+</div>
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
